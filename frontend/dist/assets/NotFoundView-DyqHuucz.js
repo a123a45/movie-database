@@ -1,0 +1,1 @@
+import{_ as s,c as o,a as e,o as c}from"./index-BTXPEp3G.js";const n={},a={class:"text-center py-20"};function r(d,t){return c(),o("div",a,[...t[0]||(t[0]=[e("h2",{class:"text-4xl font-bold text-muted"},"404",-1),e("p",{class:"mt-4 text-muted"},"页面未找到",-1)])])}const _=s(n,[["render",r]]);export{_ as default};

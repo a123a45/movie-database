@@ -1,0 +1,1 @@
+import{r as t}from"./request-CKPz8R1H.js";function i(e){return t.get("/review/page",{params:e})}function n(e){return t.get("/review/my",{params:e})}function s(e){return t.post("/review",e)}export{n as a,i as g,s};

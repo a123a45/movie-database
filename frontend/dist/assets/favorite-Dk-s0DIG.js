@@ -1,0 +1,1 @@
+import{r as e}from"./request-CKPz8R1H.js";function g(t){return e.post(`/favorite/toggle/${t}`)}function o(t){return e.get("/favorite/page",{params:t})}function r(t){return e.post(`/watchlist/toggle/${t}`)}function i(t){return e.get("/watchlist/page",{params:t})}export{r as a,i as b,o as g,g as t};

@@ -1,0 +1,1 @@
+<template><div><h2 class="text-2xl font-bold mb-6">资讯编辑</h2></div></template><script setup></script>

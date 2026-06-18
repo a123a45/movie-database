@@ -1,0 +1,1 @@
+import{_ as t,c as o,a as n,o as s}from"./index-BTXPEp3G.js";const r={};function a(c,e){return s(),o("div",null,[...e[0]||(e[0]=[n("h2",{class:"text-2xl font-bold mb-6"},"电影编辑",-1)])])}const d=t(r,[["render",a]]);export{d as default};

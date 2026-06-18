@@ -1,0 +1,1 @@
+import{r as e}from"./request-CKPz8R1H.js";function r(t){return e.get("/movie/page",{params:t})}function i(t){return e.get(`/movie/${t}`)}function n(){return e.get("/movie/hot")}function a(){return e.get("/movie/new")}function s(){return e.get("/movie/top250")}function g(t){return e.get("/movie/search",{params:{keyword:t}})}export{a,r as b,i as c,s as d,n as g,g as s};

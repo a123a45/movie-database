@@ -1,0 +1,1 @@
+import{r}from"./request-CKPz8R1H.js";function o(t){return r.post("/auth/login",t)}function n(t){return r.post("/auth/register",t)}function e(){return r.get("/auth/info")}function s(){return r.post("/auth/logout")}function a(t){return r.put("/user/profile",t)}function i(t){return r.put("/user/password",t)}export{s as a,i as c,e as g,o as l,n as r,a as u};
