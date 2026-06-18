@@ -15,6 +15,9 @@ USER app
 
 COPY --from=builder /app/target/*.jar app.jar
 
+# Include poster images
+COPY backend/uploads /app/uploads
+
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "app.jar", "--server.port=${PORT:8080}"]

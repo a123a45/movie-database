@@ -19,7 +19,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
 
 file:
-  upload-dir: /tmp/uploads
+  upload-dir: /app/uploads
 
 # ── JWT ──────────────────────────────────────────────
 jwt:

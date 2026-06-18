@@ -3,6 +3,12 @@
   command = "npm run build"
   publish = "dist"
 
+# Proxy uploads to Railway backend (images, posters)
+[[redirects]]
+  from = "/uploads/*"
+  to = "https://movie-database1125.up.railway.app/uploads/:splat"
+  status = 200
+
 # SPA fallback: all routes → index.html
 [[redirects]]
   from = "/*"
