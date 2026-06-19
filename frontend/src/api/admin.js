@@ -2,7 +2,7 @@ import request from './request'
 
 // Movie CRUD
 export function addMovie(data) { return request.post('/admin/movie', data) }
-export function updateMovie(data) { return request.put('/admin/movie', data) }
+export function updateMovie(data, config) { return request.put('/admin/movie', data, config) }
 export function deleteMovie(id) { return request.delete(`/admin/movie/${id}`) }
 
 // Person CRUD
