@@ -12,8 +12,9 @@ WORKDIR /app
 
 COPY --from=builder /app/target/*.jar app.jar
 
-# Include poster images
+# Include poster images; ensure world-writable (Railway injects random UID)
 COPY backend/uploads /app/uploads
+RUN mkdir -p /app/uploads/posters && chmod -R 777 /app/uploads
 
 EXPOSE 8080
 
