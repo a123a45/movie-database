@@ -6,15 +6,9 @@ RUN mvn dependency:go-offline -B
 COPY backend/src ./src
 RUN mvn package -DskipTests -B
 
-# ─── Stage 2: Runtime ────────────────────────────
-FROM eclipse-temurin:21-jre-alpine
+# ─── Stage 2: Runtime (full JRE — ImageIO works out of box) ──
+FROM eclipse-temurin:21-jre
 WORKDIR /app
-
-# Alpine JRE lacks native image codecs; install them for ImageIO JPEG/PNG
-RUN apk add --no-cache libjpeg-turbo libpng ttf-dejavu
-
-RUN addgroup -S app && adduser -S app -G app
-USER app
 
 COPY --from=builder /app/target/*.jar app.jar
 
